@@ -1,176 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Florian's Giveaway</title>
+  <title>Giveaway by Florian Richman</title>
   <style>
-    :root {
-      --orange: #ff7a00;
-      --white: #ffffff;
-      --black: #000000;
-      --bg-blur: url('giveaway-bg.jpg');
-    }
-
-    [data-theme="light"] {
-      --bg-color: var(--white);
-      --text-color: #111;
-      --accent: var(--orange);
-    }
-
-    [data-theme="dark"] {
-      --bg-color: var(--black);
-      --text-color: #f2f2f2;
-      --accent: var(--orange);
-    }
-
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg-color) var(--bg-blur) no-repeat center center / cover;
-      color: var(--text-color);
-      transition: background 0.4s, color 0.4s;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: rgba(0,0,0,0.6);
-      color: var(--white);
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-    }
-
-    .join-instagram {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 24px;
-      background-color: var(--accent);
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
+      backdrop-filter: blur(5px);
+    }
+
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.75);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      margin-top: 5px;
+    }
+
+    .section {
+      background-color: rgba(0, 0, 0, 0.75);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1, h2, h3 {
+      color: orange;
+    }
+
+    .button {
+      background-color: orange;
+      color: black;
+      padding: 10px 20px;
       text-decoration: none;
-      border-radius: 6px;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px 0;
     }
 
-    .proof-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    .requirements li {
+      margin: 8px 0;
+    }
+
+    .proof {
+      display: flex;
+      flex-wrap: wrap;
       gap: 20px;
-      padding: 40px 20px;
     }
 
-    .proof-item img {
+    .proof img {
       width: 100%;
+      max-width: 300px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
-    video {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 10px;
-      display: block;
-      margin: 30px auto;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 30px;
-    }
-
-    .trust, .hope {
-      font-size: 1.1em;
-      line-height: 1.7;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    footer {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 20px;
+    @media (max-width: 600px) {
+      .section {
+        margin: 10px;
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Join the Giveaway!</h1>
-    <p>Real people. Real results. 100% proof-backed payouts.</p>
-    <a class="join-instagram" href="https://instagram.com/florian__richman" target="_blank">
-      Follow @florian__richman on Instagram
-    </a>
-  </header>
+<header>
+  <h1>🎉 Join the Trusted Giveaway</h1>
+  <div class="contact">
+    📱 <strong>@florian__richman</strong> |
+    ✉️ <strong>florianrichman@gmail.com</strong> |
+    📞 <strong>+1 (812) 604‑3130</strong>
+  </div>
+</header>
 
-  <section>
-    <h2 class="section-title">📸 Proof of Winners</h2>
-    <div class="proof-gallery">
-      <div class="proof-item"><img src="proof1.jpeg" alt="Winner 1"/></div>
-      <div class="proof-item"><img src="proof2.jpeg" alt="Winner 2"/></div>
-      <div class="proof-item"><img src="proof3.jpeg" alt="Winner 3"/></div>
-      <div class="proof-item"><img src="proof4.jpeg" alt="Winner 4"/></div>
-    </div>
+<section class="section">
+  <h2>💬 Words of Hope</h2>
+  <p>
+    We understand that the internet can be full of scams — that’s why this giveaway is different. Real winners. Real payouts.
+    100% proof provided through videos, pictures, and testimonials. This giveaway was created with the intention of changing lives,
+    supporting those in need, and giving back in a way that truly makes a difference.
+  </p>
+  <p>
+    Many of our past winners came with doubt and hesitation, but once they completed the process, they received what they were promised — and more.
+    What we do here is about trust and transparency. We believe that your breakthrough can start here, today.
+  </p>
+  <p>
+    This opportunity is not just a chance to receive money, but to believe again that good things can happen.
+    We are here to guide you through, answer your questions, and support you step-by-step.
+    Let this be your moment to shine. 🙌
+  </p>
+</section>
 
-    <video controls muted autoplay loop>
-      <source src="testimonial-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+<section class="section">
+  <h2>✅ Registration Requirements</h2>
+  <ul class="requirements">
+    <li>📝 Full Name</li>
+    <li>💵 $100 Registration Fee (compulsory)</li>
+    <li>🤳 A Selfie Picture</li>
+    <li>📧 Your Email Address</li>
+  </ul>
+  <p>
+    The $100 registration fee is compulsory. It confirms you as a real person and guarantees your spot as one of the winners.
+    All previous winners also paid the registration fee, and everything went smoothly — they received their rewards in full.
+    This small step builds trust and prevents fraud while helping us serve you better.
+  </p>
+  <p>
+    Once registered, you are officially on the list of payout recipients and will receive your money shortly afterward.
+  </p>
+  <p class="contact">
+    📱 Contact: @florian__richman<br/>
+    ✉️ Email: florianrichman@gmail.com<br/>
+    📞 WhatsApp: +1 (812) 604‑3130
+  </p>
+</section>
 
-  <section>
-    <h2 class="section-title">🔒 Trust & Transparency</h2>
-    <div class="trust">
-      In order to receive your giveaway reward, there is a **one-time $100 registration fee**.  
-      This fee confirms your participation and verifies your identity as a legitimate participant.
+<section class="section">
+  <h2>📸 Proof of Winners</h2>
+  <div class="proof">
+    <img src="winner1.jpg" alt="Winner 1" />
+    <img src="winner2.jpg" alt="Winner 2" />
+    <img src="winner3.jpg" alt="Winner 3" />
+    <!-- Add more images or videos as needed -->
+  </div>
+</section>
 
-      Every past winner you see here paid the same registration fee — and received their full reward right after.
-
-      ➤ To complete registration, you must submit:
-      - Full name  
-      - A clear picture of yourself  
-      - Your email address  
-
-      This step is **compulsory**. It builds a verified, trust-based process and ensures only real people get rewarded.  
-      There are no tricks, no hidden charges — just transparency and proof.
-    </div>
-  </section>
-
-  <section>
-    <h2 class="section-title">💬 Words of Hope</h2>
-    <div class="hope">
-      Everyone deserves a chance — and this giveaway is built on that idea.
-
-      We know how many scams are out there. That’s why we’re showing **real pictures**, **real testimonials**, and full transparency up front.
-
-      If you’ve been struggling, doubting, or feeling like blessings aren’t reaching you — this is your open door.
-
-      Believe in good people again. Believe in second chances. Believe in you.
-
-      All it takes is one step of trust. The $100 registration is not just a fee — it's your confirmation that you're ready to receive.
-
-      Let this be the moment where things turn around.
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Florian's Giveaway — All Rights Reserved.
-  </footer>
+<footer>
+  <p>&copy; 2025 Giveaway by Florian Richman. All rights reserved.</p>
+  <div class="contact">
+    📱 @florian__richman | ✉️ florianrichman@gmail.com | 📞 +1 (812) 604‑3130
+  </div>
+</footer>
 
 </body>
 </html>
