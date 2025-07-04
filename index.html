@@ -3,167 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giveaway Site – Florian Richman</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Florian Richman Giveaway (FRG)</title>
   <style>
-    :root {
-      --orange: #ff7f00;
-      --bg-light: #ffffff;
-      --bg-dark: #000000;
-      --text-light: #000000;
-      --text-dark: #ffffff;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      background: #000;
+      color: #fff;
       transition: background 0.3s, color 0.3s;
-      background: var(--bg-light);
-      color: var(--text-light);
     }
 
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: var(--bg-dark);
-        color: var(--text-dark);
-      }
-    }
-
-    header, footer {
-      padding: 20px;
+    header {
+      background: orange;
+      color: black;
       text-align: center;
-      background-color: var(--orange);
-      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .registration-box {
+      background: #111;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .registration-box h2 {
+      color: orange;
+      margin-top: 0;
+    }
+
+    .section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: orange;
+      border-bottom: 1px solid orange;
+      padding-bottom: 5px;
     }
 
     .contact-buttons {
       display: flex;
       justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 15px;
+      gap: 10px;
+      margin: 15px 0;
     }
 
     .contact-buttons a {
-      background-color: white;
-      color: var(--orange);
-      padding: 10px 18px;
-      border-radius: 6px;
+      background: orange;
+      color: black;
+      padding: 10px 20px;
       text-decoration: none;
-      font-weight: 600;
-      border: 2px solid var(--orange);
-      transition: background 0.3s, color 0.3s;
+      border-radius: 6px;
+      font-weight: bold;
     }
 
-    .contact-buttons a:hover {
-      background-color: var(--orange);
-      color: white;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    h1, h2 {
-      text-align: center;
-      color: var(--orange);
-    }
-
-    .proof-gallery {
-      background: url('https://i.imgur.com/y9tthKJ.jpg') center/cover no-repeat;
-      backdrop-filter: blur(8px);
-      padding: 60px 20px;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .gallery-grid div {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 10px;
-      border-radius: 10px;
-    }
-
-    .gallery-grid img {
-      width: 100%;
+    .testimonial {
+      background: #1a1a1a;
+      padding: 15px;
+      margin-bottom: 20px;
       border-radius: 8px;
     }
 
-    .gallery-grid p {
+    .testimonial img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    footer {
       text-align: center;
-      color: white;
-      margin-top: 10px;
+      padding: 15px;
+      font-size: 14px;
+      background: #111;
     }
 
     @media (prefers-color-scheme: light) {
-      .gallery-grid p {
+      body {
+        background: #fff;
+        color: #000;
+      }
+      header {
+        background: orange;
         color: black;
+      }
+      .registration-box {
+        background: #f3f3f3;
+        color: #000;
+      }
+      .testimonial {
+        background: #f9f9f9;
+        color: #000;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Florian Richman Giveaway</h1>
+    <h1>Florian Richman Giveaway (FRG)</h1>
     <div class="contact-buttons">
       <a href="https://instagram.com/florian__richman" target="_blank">Instagram</a>
-      <a href="mailto:florianrichman@example.com">Email</a>
+      <a href="mailto:florian__richman@gmail.com">Email</a>
       <a href="https://wa.me/18126043130" target="_blank">WhatsApp</a>
     </div>
   </header>
 
-  <section>
+  <section class="registration-box">
+    <h2>Registration Requirements</h2>
+    <p>✅ $100 one-time registration fee</p>
+    <p>✅ Selfie (photo of yourself)</p>
+    <p>✅ Full legal name</p>
+  </section>
+
+  <section class="section">
     <h2>How It Works</h2>
     <p>Join our trusted giveaway and receive your reward after paying a one-time $100 registration fee. Once registered, you'll be asked to submit your full name, picture, and email. After confirmation, you’ll receive your giveaway winnings within minutes.</p>
   </section>
 
-  <section>
+  <section class="section">
     <h2>Why Trust Us?</h2>
-    <p>We’ve helped countless people get access to giveaways with full transparency. All winners are real people. Proof is displayed below. We require a $100 registration fee only to protect the integrity of our platform and to ensure serious participation. We believe in transparency, direct communication, and community support. Your success is our mission. Feel free to contact us anytime via Instagram, email, or WhatsApp.</p>
+    <p>We've helped countless people get access to giveaways with full transparency. All winners are real people. Proof is displayed below. We require a $100 registration fee only to protect the integrity of our platform and to ensure serious participation.</p>
+    <p>We believe in transparency, direct communication, and community support. Your success is our mission. Feel free to contact us anytime via Instagram, email, or WhatsApp.</p>
   </section>
 
-  <section class="proof-gallery">
+  <section class="section">
     <h2>Proof & Testimonials</h2>
-    <div class="gallery-grid">
-      <div>
-        <img src="images/268A03CC-F364-4CA2-B66B-05460DE630CD.jpeg" alt="Winner">
-        <p>Here’s one of our winners who received money recently.</p>
-      </div>
-      <div>
-        <img src="images/A2CC83E8-893E-4142-A885-C3B1749C7487.jpeg" alt="Winner">
-        <p>Here’s one of our winners who received money recently.</p>
-      </div>
-      <div>
-        <img src="images/ABAA1171-F5A3-4F40-8F84-6A9320CE0B4E.jpeg" alt="Winner">
-        <p>Here’s one of our winners who received money recently.</p>
-      </div>
-      <div>
-        <img src="images/32C3CDD8-FE89-4BB7-A674-9BD7B341A277.jpeg" alt="Winner">
-        <p>Here’s one of our winners who received money recently.</p>
-      </div>
-      <div>
-        <img src="images/0D8E1553-06DE-4ABF-A666-D29519F4332F.jpeg" alt="Winner">
-        <p>Here’s one of our winners who received money recently.</p>
-      </div>
-      <div>
-        <img src="images/ABB75016-F12A-4B0E-9C51-A38446B2FDDA.jpeg" alt="Winner">
-        <p>Here’s one of our winners who received money recently.</p>
-      </div>
+
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof1.jpeg" alt="Winner 1" />
+    </div>
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof2.jpeg" alt="Winner 2" />
+    </div>
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof3.jpeg" alt="Winner 3" />
+    </div>
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof4.jpeg" alt="Winner 4" />
+    </div>
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof5.jpeg" alt="Winner 5" />
+    </div>
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof6.jpeg" alt="Winner 6" />
+    </div>
+    <div class="testimonial">
+      <p><strong>Winner</strong></p>
+      <img src="proof7.jpeg" alt="Winner 7" />
     </div>
   </section>
 
   <footer>
-    <p>Contact: florianrichman@example.com | Instagram: @florian__richman | WhatsApp: +1 (812) 604‑3130</p>
+    Contact: florian__richman@gmail.com | Instagram: @florian__richman | WhatsApp: +1 (812) 604‑3130
   </footer>
-
 </body>
 </html>
