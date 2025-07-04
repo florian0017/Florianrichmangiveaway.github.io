@@ -1,3 +1,5 @@
+<!-- BEGIN UPDATED GIVEAWAY PAGE HTML -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,17 +101,14 @@
       flex-wrap: wrap;
       gap: 12px;
       justify-content: center;
-      margin: 2em auto;
     }
 
     .gallery img {
       width: 300px;
       max-width: 100%;
       border-radius: 8px;
-      border: 4px solid orange;
-      box-shadow: 0 0 12px rgba(255,165,0,0.4);
-      transition: transform 0.3s;
       cursor: pointer;
+      transition: transform 0.3s;
     }
 
     .gallery img:hover {
@@ -118,8 +117,7 @@
 
     video {
       max-width: 100%;
-      margin: 20px auto;
-      display: block;
+      margin-top: 20px;
     }
 
     footer {
@@ -161,6 +159,13 @@
     .lightbox.show {
       display: flex;
     }
+
+    marquee {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: orange;
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
@@ -174,6 +179,15 @@
     </div>
   </header>
 
+  <marquee behavior="scroll" direction="left">
+    💬 “Just received $7000 on PayPal — amazing!” • “Thank you for this blessing!” • “I got paid within 1 hour!” • “This is 100% real!”
+  </marquee>
+
+  <section class="section">
+    <h2>⏳ Next Giveaway Batch Closes In:</h2>
+    <h3 id="countdown" style="font-size: 1.5em; color: orange;"></h3>
+  </section>
+
   <section class="section">
     <h2>Registration Requirements</h2>
     <ul class="checklist">
@@ -185,16 +199,23 @@
   </section>
 
   <section class="section">
-    <h2>Words of Hope</h2>
-    <p>
-      Life has a way of blessing those who believe and take action. This giveaway is more than just a reward—it's a message that your time has come. Don't let hesitation steal your opportunity. Others have taken the leap, believed in our system, and received their blessings. You are next. The path to your breakthrough starts here. We're not just promising—we are delivering. Stay hopeful, act now, and trust that good things are coming your way.
-    </p>
+    <h2>Total Rewards Distributed</h2>
+    <p style="font-size: 1.5em; color: orange;"><strong>$340,000+</strong> paid out to verified winners worldwide!</p>
   </section>
 
   <section class="section">
-    <h2>Trust from Our Beneficiaries</h2>
+    <h2>How It Works</h2>
+    <ol style="text-align: left; max-width: 600px; margin: 0 auto;">
+      <li>Submit your full name, selfie, and email.</li>
+      <li>Pay the one-time $100 registration fee.</li>
+      <li>Receive your giveaway reward — sent to your PayPal or bank account.</li>
+    </ol>
+  </section>
+
+  <section class="section">
+    <h2>Words of Hope</h2>
     <p>
-      We are still giving you our 100% assurance and guarantee that you will surely receive your winnings like the other past beneficiaries, but now you seem to be depriving yourself from this blessing and your chance of getting this winnings is slipping away due to delays because you still remain among our beneficiary that is yet to receive your prize from our humble office so take note of that and act fast about this to avoid more delays okay.
+      Life has a way of blessing those who believe and take action. This giveaway is more than just a reward—it's a message that your time has come. Don’t let hesitation steal your opportunity. Others have taken the leap, believed in our system, and received their blessings. You are next. Stay hopeful, act now, and trust that good things are coming your way.
     </p>
   </section>
 
@@ -204,20 +225,27 @@
   </section>
 
   <div class="gallery">
-    <img src="IMG_4383.jpeg" alt="Winner Proof 1" onclick="openLightbox(this.src)">
-    <img src="IMG_4377.jpeg" alt="Winner Proof 2" onclick="openLightbox(this.src)">
-    <img src="IMG_4381.jpeg" alt="Winner Proof 3" onclick="openLightbox(this.src)">
-    <img src="IMG_4375.jpeg" alt="Winner Proof 4" onclick="openLightbox(this.src)">
-    <img src="IMG_4380.jpeg" alt="Winner Proof 5" onclick="openLightbox(this.src)">
-    <img src="IMG_4378.jpeg" alt="Winner Proof 6" onclick="openLightbox(this.src)">
-    <img src="IMG_4379.jpeg" alt="Winner Proof 7" onclick="openLightbox(this.src)">
-    <img src="IMG_4382.jpeg" alt="Winner Proof 8" onclick="openLightbox(this.src)">
+    <img src="IMG_4383.jpeg" alt="Winner Proof 1">
+    <img src="IMG_4377.jpeg" alt="Winner Proof 2">
+    <img src="IMG_4381.jpeg" alt="Winner Proof 3">
+    <img src="IMG_4375.jpeg" alt="Winner Proof 4">
+    <img src="IMG_4380.jpeg" alt="Winner Proof 5">
+    <img src="IMG_4378.jpeg" alt="Winner Proof 6">
+    <img src="IMG_4379.jpeg" alt="Winner Proof 7">
+    <img src="IMG_4382.jpeg" alt="Winner Proof 8">
   </div>
 
-  <video controls>
+  <video controls poster="IMG_4381.jpeg">
     <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <section class="section">
+    <h2>Trust from Our Beneficiaries</h2>
+    <p>
+      We are still giving you our 100% assurance and guarantee that you will surely receive your winnings like the other past beneficiaries, but now you seem to be depriving yourself from this blessing and your chance of getting this winnings is slipping away due to delays because you still remain among our beneficiary that is yet to receive your prize from our humble office so take note of that and act fast about this to avoid more delays okay.
+    </p>
+  </section>
 
   <section class="section">
     <h2>Frequently Asked Questions</h2>
@@ -265,9 +293,25 @@
         }
       });
     }, { threshold: 0.2 });
-
     sections.forEach(section => observer.observe(section));
+
+    const deadline = new Date().getTime() + 4 * 60 * 60 * 1000;
+    const countdown = document.getElementById("countdown");
+    setInterval(() => {
+      const now = new Date().getTime();
+      const t = deadline - now;
+      if (t <= 0) {
+        countdown.innerHTML = "Closing soon!";
+      } else {
+        const h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((t % (1000 * 60)) / 1000);
+        countdown.innerHTML = `${h}h ${m}m ${s}s`;
+      }
+    }, 1000);
   </script>
 
 </body>
 </html>
+
+<!-- END UPDATED GIVEAWAY PAGE HTML -->
