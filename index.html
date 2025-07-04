@@ -95,15 +95,14 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 12px;
       justify-content: center;
     }
 
     .gallery img {
-      width: 300px;
-      max-width: 100%;
+      width: 100%;
       border-radius: 8px;
       cursor: pointer;
       transition: transform 0.3s;
@@ -116,6 +115,7 @@
     video {
       max-width: 100%;
       margin-top: 20px;
+      border-radius: 12px;
     }
 
     footer {
@@ -157,13 +157,6 @@
     .lightbox.show {
       display: flex;
     }
-
-    marquee {
-      font-weight: bold;
-      font-size: 1.1em;
-      color: orange;
-      margin: 10px 0;
-    }
   </style>
 </head>
 <body>
@@ -177,15 +170,6 @@
     </div>
   </header>
 
-  <marquee behavior="scroll" direction="left">
-    💬 “Just received $7000 on PayPal — amazing!” • “Thank you for this blessing!” • “I got paid within 1 hour!” • “This is 100% real!”
-  </marquee>
-
-  <section class="section">
-    <h2>⏳ Next Giveaway Batch Closes In:</h2>
-    <h3 id="countdown" style="font-size: 1.5em; color: orange;"></h3>
-  </section>
-
   <section class="section">
     <h2>Registration Requirements</h2>
     <ul class="checklist">
@@ -197,46 +181,43 @@
   </section>
 
   <section class="section">
-    <h2>Total Rewards Distributed</h2>
-    <p style="font-size: 1.5em; color: orange;"><strong>$340,000+</strong> paid out to verified winners worldwide!</p>
-  </section>
-
-  <section class="section">
-    <h2>How It Works</h2>
-    <ol style="text-align: left; max-width: 600px; margin: 0 auto;">
-      <li>Submit your full name, selfie, and email.</li>
-      <li>Pay the one-time $100 registration fee.</li>
-      <li>Receive your giveaway reward — sent to your PayPal or bank account.</li>
-    </ol>
-  </section>
-
-  <section class="section">
     <h2>Words of Hope</h2>
     <p>
-      Life has a way of blessing those who believe and take action. This giveaway is more than just a reward—it's a message that your time has come. Don’t let hesitation steal your opportunity. Others have taken the leap, believed in our system, and received their blessings. You are next. Stay hopeful, act now, and trust that good things are coming your way.
+      Life has a way of blessing those who believe and take action. This giveaway is more than just a reward—it's a message that your time has come. Don’t let hesitation steal your opportunity. Others believed, paid the $100, and received their blessings. You are next. Stay hopeful, act now, and trust that good things are coming.
     </p>
   </section>
 
   <section class="section">
     <h2>Proof & Testimonials</h2>
-    <p>Here are some real photos and video testimonials from people who trusted and received their reward. You could be next!</p>
+    <p>Here are some real photos and messages from people who trusted and received their rewards. You could be next!</p>
+    <div class="gallery">
+      <img src="IMG_4375.jpeg" alt="Proof 1" onclick="openLightbox(this.src)">
+      <img src="IMG_4377.jpeg" alt="Proof 2" onclick="openLightbox(this.src)">
+      <img src="IMG_4378.jpeg" alt="Proof 3" onclick="openLightbox(this.src)">
+      <img src="IMG_4379.jpeg" alt="Proof 4" onclick="openLightbox(this.src)">
+      <img src="IMG_4380.jpeg" alt="Proof 5" onclick="openLightbox(this.src)">
+      <img src="IMG_4381.jpeg" alt="Proof 6" onclick="openLightbox(this.src)">
+      <img src="IMG_4382.jpeg" alt="Proof 7" onclick="openLightbox(this.src)">
+      <img src="IMG_4383.jpeg" alt="Proof 8" onclick="openLightbox(this.src)">
+    </div>
+    <video controls poster="assets/video-poster.jpg">
+      <source src="your-video-file.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 
-  <div class="gallery">
-    <img src="IMG_4383.jpeg" alt="Winner Proof 1">
-    <img src="IMG_4377.jpeg" alt="Winner Proof 2">
-    <img src="IMG_4381.jpeg" alt="Winner Proof 3">
-    <img src="IMG_4375.jpeg" alt="Winner Proof 4">
-    <img src="IMG_4380.jpeg" alt="Winner Proof 5">
-    <img src="IMG_4378.jpeg" alt="Winner Proof 6">
-    <img src="IMG_4379.jpeg" alt="Winner Proof 7">
-    <img src="IMG_4382.jpeg" alt="Winner Proof 8">
-  </div>
+  <section class="section">
+    <h2>Total Rewards Paid Out</h2>
+    <p><strong>$238,000+ paid to verified participants worldwide!</strong><br>Each person followed the process and received their full prize.</p>
+  </section>
 
-  <video controls poster="IMG_4381.jpeg">
-    <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <section class="section">
+    <h2>How It Works</h2>
+    <p>Step 1: Contact via WhatsApp or Instagram<br>
+       Step 2: Submit your full name and selfie<br>
+       Step 3: Pay the one-time $100 registration<br>
+       Step 4: Receive your prize within minutes</p>
+  </section>
 
   <section class="section">
     <h2>Trust from Our Beneficiaries</h2>
@@ -247,14 +228,12 @@
 
   <section class="section">
     <h2>Frequently Asked Questions</h2>
-
     <div class="faq-en">
       <h3>English</h3>
       <p><strong>What is the $100 registration fee for?</strong><br>This confirms you as a verified participant and covers processing to release your reward.</p>
       <p><strong>When will I receive my giveaway reward?</strong><br>After successful registration, your reward is processed immediately.</p>
       <p><strong>Is this legit? How do I trust this?</strong><br>We have many past winners who paid the same fee and received their prizes. You’ll find proof above.</p>
     </div>
-
     <div class="faq-de">
       <h3>Deutsch</h3>
       <p><strong>Wofür ist die Registrierungsgebühr von 100 $?</strong><br>Sie bestätigt Sie als verifizierten Teilnehmer und deckt die Bearbeitung Ihrer Auszahlung.</p>
@@ -291,25 +270,9 @@
         }
       });
     }, { threshold: 0.2 });
-    sections.forEach(section => observer.observe(section));
 
-    const deadline = new Date().getTime() + 4 * 60 * 60 * 1000;
-    const countdown = document.getElementById("countdown");
-    setInterval(() => {
-      const now = new Date().getTime();
-      const t = deadline - now;
-      if (t <= 0) {
-        countdown.innerHTML = "Closing soon!";
-      } else {
-        const h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((t % (1000 * 60)) / 1000);
-        countdown.innerHTML = `${h}h ${m}m ${s}s`;
-      }
-    }, 1000);
+    sections.forEach(section => observer.observe(section));
   </script>
 
 </body>
 </html>
-
-<!-- END UPDATED GIVEAWAY PAGE HTML -->
