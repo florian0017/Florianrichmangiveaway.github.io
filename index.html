@@ -1,173 +1,169 @@
-<section id="testimonials" style="padding: 60px 20px; background: url('https://i.imgur.com/y9tthKJ.jpg') center/cover no-repeat; backdrop-filter: blur(10px);">
-  <h2 style="text-align: center; color: orange; margin-bottom: 40px;">Proof & Testimonials</h2>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
-    
-    <!-- Image 1 -->
-    <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
-      <img src="images/268A03CC-F364-4CA2-B66B-05460DE630CD.jpeg" alt="Winner" style="width: 100%; border-radius: 8px;">
-      <p style="color: white; text-align: center; margin-top: 10px;">Here’s one of our winners who received money recently.</p>
-    </div>
-
-    <!-- Image 2 -->
-    <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
-      <img src="images/A2CC83E8-893E-4142-A885-C3B1749C7487.jpeg" alt="Winner" style="width: 100%; border-radius: 8px;">
-      <p style="color: white; text-align: center; margin-top: 10px;">Here’s one of our winners who received money recently.</p>
-    </div>
-
-    <!-- Image 3 -->
-    <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
-      <img src="images/ABAA1171-F5A3-4F40-8F84-6A9320CE0B4E.jpeg" alt="Winner" style="width: 100%; border-radius: 8px;">
-      <p style="color: white; text-align: center; margin-top: 10px;">Here’s one of our winners who received money recently.</p>
-    </div>
-
-    <!-- Image 4 -->
-    <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
-      <img src="images/32C3CDD8-FE89-4BB7-A674-9BD7B341A277.jpeg" alt="Winner" style="width: 100%; border-radius: 8px;">
-      <p style="color: white; text-align: center; margin-top: 10px;">Here’s one of our winners who received money recently.</p>
-    </div>
-
-    <!-- Image 5 -->
-    <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
-      <img src="images/0D8E1553-06DE-4ABF-A666-D29519F4332F.jpeg" alt="Winner" style="width: 100%; border-radius: 8px;">
-      <p style="color: white; text-align: center; margin-top: 10px;">Here’s one of our winners who received money recently.</p>
-    </div>
-
-    <!-- Image 6 -->
-    <div style="background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 10px;">
-      <img src="images/ABB75016-F12A-4B0E-9C51-A38446B2FDDA.jpeg" alt="Winner" style="width: 100%; border-radius: 8px;">
-      <p style="color: white; text-align: center; margin-top: 10px;">Here’s one of our winners who received money recently.</p>
-    </div>
-
-  </div>
-</section><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trusted Giveaway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giveaway Site – Florian Richman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --orange: #ff7f00;
+      --bg-light: #ffffff;
+      --bg-dark: #000000;
+      --text-light: #000000;
+      --text-dark: #ffffff;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #f0f0f0;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+      background: var(--bg-light);
+      color: var(--text-light);
     }
 
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px 16px;
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: var(--bg-dark);
+        color: var(--text-dark);
+      }
     }
 
-    .header {
-      text-align: center;
-      background: #222;
-      padding: 25px 15px;
-      border-bottom: 3px solid orange;
-    }
-
-    .header h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: orange;
-    }
-
-    .contact-links {
-      font-size: 14px;
-      margin-top: 10px;
-    }
-
-    .contact-links a {
-      color: #00afff;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-
-    .section {
-      background: #1c1c1c;
-      margin: 25px 0;
+    header, footer {
       padding: 20px;
+      text-align: center;
+      background-color: var(--orange);
+      color: white;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .contact-buttons a {
+      background-color: white;
+      color: var(--orange);
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid var(--orange);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .contact-buttons a:hover {
+      background-color: var(--orange);
+      color: white;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: var(--orange);
+    }
+
+    .proof-gallery {
+      background: url('https://i.imgur.com/y9tthKJ.jpg') center/cover no-repeat;
+      backdrop-filter: blur(8px);
+      padding: 60px 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid div {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
       border-radius: 10px;
     }
 
-    .section h2 {
-      color: orange;
-      font-size: 18px;
-      margin-bottom: 10px;
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
     }
 
-    .requirements {
-      font-size: 14px;
-    }
-
-    .requirements li {
-      margin-bottom: 6px;
-    }
-
-    .footer {
+    .gallery-grid p {
       text-align: center;
-      font-size: 12px;
-      color: #999;
-      padding: 20px 10px;
+      color: white;
+      margin-top: 10px;
     }
 
-    @media (max-width: 500px) {
-      .header h1 {
-        font-size: 20px;
-      }
-
-      .section h2 {
-        font-size: 16px;
-      }
-
-      .contact-links {
-        font-size: 13px;
-      }
-
-      .requirements {
-        font-size: 13px;
+    @media (prefers-color-scheme: light) {
+      .gallery-grid p {
+        color: black;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>🎉 Join the Trusted Giveaway</h1>
-      <div class="contact-links">
-        📱 <a href="https://instagram.com/florian__richman" target="_blank">@florian__richman</a> |
-        📧 <a href="mailto:florianrichman@gmail.com">florianrichman@gmail.com</a> |
-        📞 <a href="https://wa.me/18126043130" target="_blank">+1 (812) 604‑3130</a>
+
+  <header>
+    <h1>Florian Richman Giveaway</h1>
+    <div class="contact-buttons">
+      <a href="https://instagram.com/florian__richman" target="_blank">Instagram</a>
+      <a href="mailto:florianrichman@example.com">Email</a>
+      <a href="https://wa.me/18126043130" target="_blank">WhatsApp</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>How It Works</h2>
+    <p>Join our trusted giveaway and receive your reward after paying a one-time $100 registration fee. Once registered, you'll be asked to submit your full name, picture, and email. After confirmation, you’ll receive your giveaway winnings within minutes.</p>
+  </section>
+
+  <section>
+    <h2>Why Trust Us?</h2>
+    <p>We’ve helped countless people get access to giveaways with full transparency. All winners are real people. Proof is displayed below. We require a $100 registration fee only to protect the integrity of our platform and to ensure serious participation. We believe in transparency, direct communication, and community support. Your success is our mission. Feel free to contact us anytime via Instagram, email, or WhatsApp.</p>
+  </section>
+
+  <section class="proof-gallery">
+    <h2>Proof & Testimonials</h2>
+    <div class="gallery-grid">
+      <div>
+        <img src="images/268A03CC-F364-4CA2-B66B-05460DE630CD.jpeg" alt="Winner">
+        <p>Here’s one of our winners who received money recently.</p>
+      </div>
+      <div>
+        <img src="images/A2CC83E8-893E-4142-A885-C3B1749C7487.jpeg" alt="Winner">
+        <p>Here’s one of our winners who received money recently.</p>
+      </div>
+      <div>
+        <img src="images/ABAA1171-F5A3-4F40-8F84-6A9320CE0B4E.jpeg" alt="Winner">
+        <p>Here’s one of our winners who received money recently.</p>
+      </div>
+      <div>
+        <img src="images/32C3CDD8-FE89-4BB7-A674-9BD7B341A277.jpeg" alt="Winner">
+        <p>Here’s one of our winners who received money recently.</p>
+      </div>
+      <div>
+        <img src="images/0D8E1553-06DE-4ABF-A666-D29519F4332F.jpeg" alt="Winner">
+        <p>Here’s one of our winners who received money recently.</p>
+      </div>
+      <div>
+        <img src="images/ABB75016-F12A-4B0E-9C51-A38446B2FDDA.jpeg" alt="Winner">
+        <p>Here’s one of our winners who received money recently.</p>
       </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>💬 Words of Hope</h2>
-      <p>We understand that the internet can be full of scams — that’s why this giveaway is different. Real winners. Real payouts. 100% proof provided through videos, pictures, and testimonials.</p>
-      <p>This giveaway was created with the intention of changing lives, supporting those in need, and giving back in a way that truly makes a difference.</p>
-      <p>Many of our past winners came with doubt and hesitation, but once they completed the process, they received what they were promised — and more. What we do here is about trust and transparency. We believe that your breakthrough can start here, today.</p>
-      <p>This opportunity is not just a chance to receive money, but to believe again that good things can happen. We are here to guide you through, answer your questions, and support you step-by-step. Let this be your moment to shine. 🙌</p>
-    </div>
+  <footer>
+    <p>Contact: florianrichman@example.com | Instagram: @florian__richman | WhatsApp: +1 (812) 604‑3130</p>
+  </footer>
 
-    <div class="section">
-      <h2>✅ Registration Requirements</h2>
-      <ul class="requirements">
-        <li>Full Name ✅</li>
-        <li>Selfie Picture ✅</li>
-        <li>$100 Registration Fee ✅</li>
-        <li>Valid Email Address ✅</li>
-        <li>WhatsApp Number ✅</li>
-      </ul>
-      <p>The $100 registration fee is <strong>compulsory</strong>. This step confirms you as one of the winners. All our previous winners also paid the fee — and everything went smoothly.</p>
-      <p>Once you're registered with your full name, selfie, email, and the fee, you will be fully confirmed and get your reward directly after.</p>
-    </div>
-
-    <div class="footer">
-      &copy; 2025 Trusted Giveaway by Florian Richman
-    </div>
-  </div>
 </body>
 </html>
