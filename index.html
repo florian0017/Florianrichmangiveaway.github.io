@@ -97,21 +97,29 @@
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
       justify-content: center;
-      margin-top: 1em;
+      margin: 2em auto;
     }
 
     .gallery img {
-      width: 160px;
-      height: auto;
+      width: 300px;
+      max-width: 100%;
       border-radius: 8px;
-      cursor: pointer;
+      border: 4px solid orange;
+      box-shadow: 0 0 12px rgba(255,165,0,0.4);
       transition: transform 0.3s;
+      cursor: pointer;
     }
 
     .gallery img:hover {
       transform: scale(1.05);
+    }
+
+    video {
+      max-width: 100%;
+      margin: 20px auto;
+      display: block;
     }
 
     footer {
@@ -184,41 +192,43 @@
   </section>
 
   <section class="section">
-    <h2>Proof & Testimonials</h2>
-    <p>Here are some real photos and video testimonials from people who trusted and received their reward. You could be next!</p>
-  </section>
-
-  <section class="section">
     <h2>Trust from Our Beneficiaries</h2>
     <p>
       We are still giving you our 100% assurance and guarantee that you will surely receive your winnings like the other past beneficiaries, but now you seem to be depriving yourself from this blessing and your chance of getting this winnings is slipping away due to delays because you still remain among our beneficiary that is yet to receive your prize from our humble office so take note of that and act fast about this to avoid more delays okay.
     </p>
   </section>
 
-  <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
-    <img src="IMG_4383.jpeg" alt="Winner Proof 1" style="width: 300px;">
-    <img src="IMG_4377.jpeg" alt="Winner Proof 2" style="width: 300px;">
-    <img src="IMG_4381.jpeg" alt="Winner Proof 3" style="width: 300px;">
-    <img src="IMG_4375.jpeg" alt="Winner Proof 4" style="width: 300px;">
-    <img src="IMG_4380.jpeg" alt="Winner Proof 5" style="width: 300px;">
-    <img src="IMG_4378.jpeg" alt="Winner Proof 6" style="width: 300px;">
-    <img src="IMG_4379.jpeg" alt="Winner Proof 7" style="width: 300px;">
-    <img src="IMG_4382.jpeg" alt="Winner Proof 8" style="width: 300px;">
+  <section class="section">
+    <h2>Proof & Testimonials</h2>
+    <p>Here are some real photos and video testimonials from people who trusted and received their reward. You could be next!</p>
+  </section>
+
+  <div class="gallery">
+    <img src="IMG_4383.jpeg" alt="Winner Proof 1" onclick="openLightbox(this.src)">
+    <img src="IMG_4377.jpeg" alt="Winner Proof 2" onclick="openLightbox(this.src)">
+    <img src="IMG_4381.jpeg" alt="Winner Proof 3" onclick="openLightbox(this.src)">
+    <img src="IMG_4375.jpeg" alt="Winner Proof 4" onclick="openLightbox(this.src)">
+    <img src="IMG_4380.jpeg" alt="Winner Proof 5" onclick="openLightbox(this.src)">
+    <img src="IMG_4378.jpeg" alt="Winner Proof 6" onclick="openLightbox(this.src)">
+    <img src="IMG_4379.jpeg" alt="Winner Proof 7" onclick="openLightbox(this.src)">
+    <img src="IMG_4382.jpeg" alt="Winner Proof 8" onclick="openLightbox(this.src)">
   </div>
 
-  <video controls style="max-width: 100%; margin-top: 20px;">
+  <video controls>
     <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <section class="section">
     <h2>Frequently Asked Questions</h2>
+
     <div class="faq-en">
       <h3>English</h3>
       <p><strong>What is the $100 registration fee for?</strong><br>This confirms you as a verified participant and covers processing to release your reward.</p>
       <p><strong>When will I receive my giveaway reward?</strong><br>After successful registration, your reward is processed immediately.</p>
       <p><strong>Is this legit? How do I trust this?</strong><br>We have many past winners who paid the same fee and received their prizes. You’ll find proof above.</p>
     </div>
+
     <div class="faq-de">
       <h3>Deutsch</h3>
       <p><strong>Wofür ist die Registrierungsgebühr von 100 $?</strong><br>Sie bestätigt Sie als verifizierten Teilnehmer und deckt die Bearbeitung Ihrer Auszahlung.</p>
