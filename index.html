@@ -1,5 +1,3 @@
-<!-- BEGIN UPDATED GIVEAWAY PAGE HTML -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,10 +29,10 @@
       font-family: Arial, sans-serif;
       background-color: var(--bg-dark);
       color: var(--text-dark);
-      background-image: url('assets/blurry-winnings.jpg');
-      background-size: cover;
+      background-image: url('assets/pattern-giveaway.jpg'); /* Replace with your own background */
+      background-size: 400px;
       background-position: center;
-      backdrop-filter: blur(6px);
+      background-repeat: repeat;
     }
 
     header {
@@ -97,27 +95,27 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      padding: 1em;
+      max-width: 900px;
+      margin: auto;
     }
 
     .gallery img {
-      width: 300px;
-      max-width: 100%;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid orange;
+      box-sizing: border-box;
     }
 
     video {
       max-width: 100%;
-      margin-top: 20px;
+      border-radius: 10px;
+      border: 3px solid orange;
+      margin: 1em auto;
+      display: block;
     }
 
     footer {
@@ -136,28 +134,6 @@
       header, .section {
         background-color: rgba(255, 255, 255, 0.85);
       }
-    }
-
-    .lightbox {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.9);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .lightbox img {
-      max-width: 95%;
-      max-height: 90vh;
-    }
-
-    .lightbox.show {
-      display: flex;
     }
 
     marquee {
@@ -180,7 +156,7 @@
   </header>
 
   <marquee behavior="scroll" direction="left">
-    💬 “Just received $7000 on PayPal — amazing!” • “Thank you for this blessing!” • “I got paid within 1 hour!” • “This is 100% real!”
+    💬 “Just received $15,000.00 on PayPal — amazing!” • “Thank you for this blessing!” • “I got paid within 1 hour!” • “This is 100% real!”
   </marquee>
 
   <section class="section">
@@ -220,6 +196,14 @@
   </section>
 
   <section class="section">
+    <h2>Testimonial & Proof Video</h2>
+    <video controls poster="IMG_4381.jpeg">
+      <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="section">
     <h2>Proof & Testimonials</h2>
     <p>Here are some real photos and video testimonials from people who trusted and received their reward. You could be next!</p>
   </section>
@@ -235,11 +219,6 @@
     <img src="IMG_4382.jpeg" alt="Winner Proof 8">
   </div>
 
-  <video controls poster="IMG_4381.jpeg">
-    <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
   <section class="section">
     <h2>Trust from Our Beneficiaries</h2>
     <p>
@@ -249,7 +228,6 @@
 
   <section class="section">
     <h2>Frequently Asked Questions</h2>
-
     <div class="faq-en">
       <h3>English</h3>
       <p><strong>What is the $100 registration fee for?</strong><br>This confirms you as a verified participant and covers processing to release your reward.</p>
@@ -270,17 +248,7 @@
     &copy; 2025 Florian Richman Giveaway
   </footer>
 
-  <div class="lightbox" onclick="this.classList.remove('show')">
-    <img src="" alt="preview" />
-  </div>
-
   <script>
-    function openLightbox(src) {
-      const box = document.querySelector('.lightbox');
-      box.querySelector('img').src = src;
-      box.classList.add('show');
-    }
-
     const isGerman = (navigator.language || navigator.userLanguage).toLowerCase().startsWith('de');
     document.querySelector('.faq-en').style.display = isGerman ? 'none' : 'block';
     document.querySelector('.faq-de').style.display = isGerman ? 'block' : 'none';
@@ -313,5 +281,3 @@
 
 </body>
 </html>
-
-<!-- END UPDATED GIVEAWAY PAGE HTML -->
