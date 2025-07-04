@@ -1,61 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Florian's Giveaway</title>
+  <meta name="description" content="Join Florian's giveaway - Real rewards with real proof. See testimonials and winners!" />
   <style>
+    :root {
+      --orange: #ff7a00;
+      --bg-light: #ffffff;
+      --bg-dark: #000000;
+      --text-light: #000000;
+      --text-dark: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: var(--bg-dark);
+        color: var(--text-dark);
+      }
+      header, footer, .proof-item {
+        background: #111;
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background: var(--bg-light);
+        color: var(--text-light);
+      }
+      header, footer, .proof-item {
+        background: #fff;
+      }
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
-      color: #333;
+      transition: background 0.3s, color 0.3s;
+      background-image: linear-gradient(45deg, var(--orange) 0%, transparent 100%);
+      background-size: cover;
     }
 
     header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
+      color: white;
+      background-color: var(--bg-dark);
     }
 
     h1 {
-      margin-bottom: 5px;
+      margin: 0;
+      font-size: 2em;
     }
 
-    p.lead {
-      margin-top: 0;
+    .lead {
+      margin-top: 10px;
       font-size: 1.1em;
+      color: var(--orange);
     }
 
-    .join-button {
+    .action-button {
       display: inline-block;
-      background-color: #28a745;
       color: white;
       padding: 12px 24px;
-      margin: 20px auto;
+      margin: 12px;
       border: none;
       border-radius: 5px;
       font-size: 1em;
       text-decoration: none;
+      transition: background 0.3s;
     }
 
-    .join-button:hover {
-      background-color: #218838;
-    }
+    .whatsapp-button { background-color: #25D366; }
+    .whatsapp-button:hover { background-color: #1ebe5d; }
+
+    .instagram-button { background-color: #E1306C; }
+    .instagram-button:hover { background-color: #c7205f; }
+
+    .email-button { background-color: #0072c6; }
+    .email-button:hover { background-color: #005b9f; }
 
     .proof-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
-      padding: 20px;
+      padding: 30px 20px;
       max-width: 1000px;
       margin: auto;
     }
 
     .proof-item {
-      background: white;
       padding: 10px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -69,27 +105,46 @@
     .caption {
       margin-top: 10px;
       font-size: 0.95em;
-      color: #555;
+      color: #888;
     }
 
-    .testimonials {
-      background-color: #fff;
+    .section {
       padding: 40px 20px;
-      text-align: center;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    .testimonials blockquote {
-      font-style: italic;
-      margin: 10px auto;
-      max-width: 700px;
+    .section h2 {
+      text-align: center;
+      color: var(--orange);
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    video {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item strong {
+      display: block;
+      margin-bottom: 5px;
     }
 
     footer {
-      background-color: #111;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+      padding: 20px;
+      background: var(--bg-dark);
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -98,56 +153,53 @@
   <header>
     <h1>Welcome to Florian's Giveaway</h1>
     <p class="lead">Helping real people with real rewards. 100% proof backed.</p>
-    <a href="https://t.me/yourTelegramLink" class="join-button">Join the Giveaway 🚀</a>
+    <a href="https://wa.me/18126043130" class="action-button whatsapp-button" target="_blank">Chat on WhatsApp 💬</a>
+    <a href="mailto:schwarzdietmar10@gmail.com" class="action-button email-button">Email Me 📧</a>
+    <a href="https://instagram.com/florian__richman" class="action-button instagram-button" target="_blank">Follow on Instagram 📲</a>
   </header>
 
-  <section>
-    <h2 style="text-align:center;">📸 Proof of Payments</h2>
+  <section class="section">
+    <h2>📸 Proof of Payments</h2>
     <div class="proof-gallery">
-
-      <div class="proof-item">
-        <img src="IMG_7018.jpeg" alt="Proof 1">
-        <div class="caption">She received $50 just for participating. Trust paid off!</div>
-      </div>
-
-      <div class="proof-item">
-        <img src="9AD6B6B4-E5A1-4499-94E3-B4FADA2B6.jpeg" alt="Proof 2">
-        <div class="caption">First-time winner — payment arrived fast!</div>
-      </div>
-
-      <div class="proof-item">
-        <img src="E4F7847A-79D4-4D26-BE66-76FDDAE1CC.jpeg" alt="Proof 3">
-        <div class="caption">No need to be skeptical — proof speaks louder.</div>
-      </div>
-
-      <div class="proof-item">
-        <img src="b1443cf1-bc62-40ec-a716-24312ccabb17.jpeg" alt="Proof 4">
-        <div class="caption">Another happy winner confirms receipt!</div>
-      </div>
-
-      <div class="proof-item">
-        <img src="b432d404-8daa-4bbe-b220-a2c2ff4d8627.jpeg" alt="Proof 5">
-        <div class="caption">Yes, it’s real. You could be next!</div>
-      </div>
-
-      <div class="proof-item">
-        <img src="FD0B764B-69AF-4F9F-AE62-3623E5C75E33.jpeg" alt="Proof 6">
-        <div class="caption">Delivered as promised — no tricks.</div>
-      </div>
-
-      <div class="proof-item">
-        <img src="5B8D478A-978F-41C1-9E98-7A8114201E49.jpeg" alt="Proof 7">
-        <div class="caption">From doubt to joy. She's now a believer!</div>
-      </div>
-
+      <div class="proof-item"><img src="IMG_7018.jpeg" alt="Proof 1"><div class="caption">She received her reward just for participating.</div></div>
+      <div class="proof-item"><img src="326DBBE9-8E2D-4F8F-8BEA-092A2780103F.jpeg" alt="Proof 2"><div class="caption">First-time winner — payment arrived fast!</div></div>
+      <div class="proof-item"><img src="723FC315-E0BA-4644-9EE9-4A8A3A7C0EC4.jpeg" alt="Proof 3"><div class="caption">Proof speaks louder than words.</div></div>
+      <div class="proof-item"><img src="5C374AA9-D5FE-478C-9775-FCB7529E62DD.jpeg" alt="Proof 4"><div class="caption">Another happy winner confirms receipt!</div></div>
+      <div class="proof-item"><img src="6ADE5A94-1677-4CA0-89CF-770537F00AD1.jpeg" alt="Proof 5"><div class="caption">Yes, it’s real. You could be next!</div></div>
+      <div class="proof-item"><img src="FD0B764B-69AF-4F9F-AE62-3623E5C75E33.jpeg" alt="Proof 6"><div class="caption">Delivered as promised — no tricks.</div></div>
+      <div class="proof-item"><img src="5B8D478A-978F-41C1-9E98-7A8114201E49.jpeg" alt="Proof 7"><div class="caption">From doubt to joy. She's now a believer!</div></div>
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>💬 What People Are Saying</h2>
-    <blockquote>“I thought it was fake at first… but I got paid the same day!”</blockquote>
-    <blockquote>“I’ll be joining every time from now on. Thank you, Florian!”</blockquote>
-    <blockquote>“This giveaway changed my week. Much love!”</blockquote>
+  <section class="section">
+    <h2>🎬 Real Testimonial & Proof</h2>
+    <div class="video-wrapper">
+      <video controls muted>
+        <source src="ScreenRecording_07-29-2024 23-21-40_1.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>💬 Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <strong>Is this giveaway real?</strong>
+      Yes! Every winner shown has received their reward. You can see the proof above.
+    </div>
+    <div class="faq-item">
+      <strong>How do I join?</strong>
+      Just contact Florian via Instagram, WhatsApp, or email.
+    </div>
+    <div class="faq-item">
+      <strong>Do I need to pay anything?</strong>
+      No. You join, you wait, and if you're selected — you win. Simple as that.
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>👤 About Florian</h2>
+    <p>Florian helps people by giving back from his own success. This page exists to spread hope and make a difference — especially for those who really need it.</p>
   </section>
 
   <footer>
