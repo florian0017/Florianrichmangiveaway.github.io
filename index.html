@@ -29,7 +29,7 @@
       font-family: Arial, sans-serif;
       background-color: var(--bg-dark);
       color: var(--text-dark);
-      background-image: url('assets/pattern-giveaway.jpg'); /* Replace with your own background */
+      background-image: url('assets/pattern-giveaway.jpg');
       background-size: 400px;
       background-position: center;
       background-repeat: repeat;
@@ -146,138 +146,143 @@
 </head>
 <body>
 
-  <header>
-    <h1>Florian Richman Giveaway (FRG)</h1>
-    <div class="button-group">
-      <a class="whatsapp" href="https://wa.me/18126043130" target="_blank">WhatsApp</a>
-      <a class="email" href="mailto:schwarzdietmar10@gmail.com">Email</a>
-      <a class="instagram" href="https://instagram.com/florian__richman" target="_blank">Instagram</a>
-    </div>
-  </header>
+<header>
+  <h1>Florian Richman Giveaway (FRG)</h1>
+  <div class="button-group">
+    <a class="whatsapp" href="https://wa.me/18126043130" target="_blank">WhatsApp</a>
+    <a class="email" href="mailto:schwarzdietmar10@gmail.com">Email</a>
+    <a class="instagram" href="https://instagram.com/florian__richman" target="_blank">Instagram</a>
+  </div>
+</header>
 
-  <marquee behavior="scroll" direction="left">
-    💬 “Just received $15,000.00 on PayPal — amazing!” • “Thank you for this blessing!” • “I got paid within 1 hour!” • “This is 100% real!”
-  </marquee>
+<marquee behavior="scroll" direction="left" id="marquee-text">
+  💬 “Just received $15,000.00 on PayPal — amazing!” • “Thank you for this blessing!” • “I got paid within 1 hour!” • “This is 100% real!”
+</marquee>
 
-  <section class="section">
-    <h2>⏳ Next Giveaway Batch Closes In:</h2>
-    <h3 id="countdown" style="font-size: 1.5em; color: orange;"></h3>
-  </section>
+<section class="section">
+  <h2 class="giveaway-title">⏳ Next Giveaway Batch Closes In:</h2>
+  <h3 id="countdown" style="font-size: 1.5em; color: orange;"></h3>
+</section>
 
-  <section class="section">
-    <h2>Registration Requirements</h2>
-    <ul class="checklist">
-      <li>Full Name</li>
-      <li>Selfie Picture</li>
-      <li>$100 Registration Fee</li>
-    </ul>
-    <p><strong>Note:</strong> This fee is compulsory to confirm you as a verified winner. All previous winners paid this same registration fee and successfully received their winnings.</p>
-  </section>
+<section class="section">
+  <h2 class="registration-heading">Registration Requirements</h2>
+  <ul class="checklist">
+    <li id="reg-fullname">✅ Full Name</li>
+    <li id="reg-selfie">✅ Selfie Picture</li>
+    <li id="reg-fee">✅ $100 Registration Fee</li>
+  </ul>
+  <p id="reg-note"><strong>Note:</strong> This fee is compulsory to confirm you as a verified winner. All previous winners paid this same registration fee and successfully received their winnings.</p>
+</section>
 
-  <section class="section">
-    <h2>Total Rewards Distributed</h2>
-    <p style="font-size: 1.5em; color: orange;"><strong>$340,000+</strong> paid out to verified winners worldwide!</p>
-  </section>
+<section class="section">
+  <h2>Total Rewards Distributed</h2>
+  <p style="font-size: 1.5em; color: orange;"><strong>$340,000+</strong> paid out to verified winners worldwide!</p>
+</section>
 
-  <section class="section">
-    <h2>How It Works</h2>
-    <ol style="text-align: left; max-width: 600px; margin: 0 auto;">
-      <li>Submit your full name, selfie, and email.</li>
-      <li>Pay the one-time $100 registration fee.</li>
-      <li>Receive your giveaway reward — sent to your PayPal or bank account.</li>
-    </ol>
-  </section>
+<section class="section">
+  <h2>Words of Hope</h2>
+  <p>
+    Life has a way of blessing those who believe and take action. This giveaway is more than just a reward—it's a message that your time has come. Don’t let hesitation steal your opportunity. Others have taken the leap, believed in our system, and received their blessings. You are next. Stay hopeful, act now, and trust that good things are coming your way.
+  </p>
+</section>
 
-  <section class="section">
-    <h2>Words of Hope</h2>
-    <p>
-      Life has a way of blessing those who believe and take action. This giveaway is more than just a reward—it's a message that your time has come. Don’t let hesitation steal your opportunity. Others have taken the leap, believed in our system, and received their blessings. You are next. Stay hopeful, act now, and trust that good things are coming your way.
-    </p>
-  </section>
+<section class="section">
+  <h2>Testimonial & Proof Video</h2>
+  <video controls poster="IMG_4381.jpeg">
+    <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
 
-  <section class="section">
-    <h2>Testimonial & Proof Video</h2>
-    <video controls poster="IMG_4381.jpeg">
-      <source src="ScreenRecording_07-29-2024 23-21-40_1.mov" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+<section class="section">
+  <h2>Proof & Testimonials</h2>
+  <p>Here are some real photos and video testimonials from people who trusted and received their reward. You could be next!</p>
+</section>
 
-  <section class="section">
-    <h2>Proof & Testimonials</h2>
-    <p>Here are some real photos and video testimonials from people who trusted and received their reward. You could be next!</p>
-  </section>
+<div class="gallery">
+  <img src="IMG_4383.jpeg" alt="Winner Proof 1">
+  <img src="IMG_4377.jpeg" alt="Winner Proof 2">
+  <img src="IMG_4381.jpeg" alt="Winner Proof 3">
+  <img src="IMG_4375.jpeg" alt="Winner Proof 4">
+  <img src="IMG_4380.jpeg" alt="Winner Proof 5">
+  <img src="IMG_4378.jpeg" alt="Winner Proof 6">
+  <img src="IMG_4379.jpeg" alt="Winner Proof 7">
+  <img src="IMG_4382.jpeg" alt="Winner Proof 8">
+</div>
 
-  <div class="gallery">
-    <img src="IMG_4383.jpeg" alt="Winner Proof 1">
-    <img src="IMG_4377.jpeg" alt="Winner Proof 2">
-    <img src="IMG_4381.jpeg" alt="Winner Proof 3">
-    <img src="IMG_4375.jpeg" alt="Winner Proof 4">
-    <img src="IMG_4380.jpeg" alt="Winner Proof 5">
-    <img src="IMG_4378.jpeg" alt="Winner Proof 6">
-    <img src="IMG_4379.jpeg" alt="Winner Proof 7">
-    <img src="IMG_4382.jpeg" alt="Winner Proof 8">
+<section class="section">
+  <h2>Trust from Our Beneficiaries</h2>
+  <p id="trust-message">
+    We are still giving you our 100% assurance and guarantee that you will surely receive your winnings like the other past beneficiaries, but now you seem to be depriving yourself from this blessing and your chance of getting this winnings is slipping away due to delays because you still remain among our beneficiary that is yet to receive your prize from our humble office so take note of that and act fast about this to avoid more delays okay.
+  </p>
+</section>
+
+<section class="section">
+  <h2 id="faq-heading">Frequently Asked Questions</h2>
+  <div class="faq-en">
+    <h3>English</h3>
+    <p><strong>What is the $100 registration fee for?</strong><br>This confirms you as a verified participant and covers processing to release your reward.</p>
+    <p><strong>When will I receive my giveaway reward?</strong><br>After successful registration, your reward is processed immediately.</p>
+    <p><strong>Is this legit? How do I trust this?</strong><br>We have many past winners who paid the same fee and received their prizes. You’ll find proof above.</p>
   </div>
 
-  <section class="section">
-    <h2>Trust from Our Beneficiaries</h2>
-    <p>
-      We are still giving you our 100% assurance and guarantee that you will surely receive your winnings like the other past beneficiaries, but now you seem to be depriving yourself from this blessing and your chance of getting this winnings is slipping away due to delays because you still remain among our beneficiary that is yet to receive your prize from our humble office so take note of that and act fast about this to avoid more delays okay.
-    </p>
-  </section>
+  <div class="faq-de">
+    <h3>Deutsch</h3>
+    <p><strong>Wofür ist die Registrierungsgebühr von 100 $?</strong><br>Sie bestätigt Sie als verifizierten Teilnehmer und deckt die Bearbeitung Ihrer Auszahlung.</p>
+    <p><strong>Wann erhalte ich meinen Gewinn?</strong><br>Nach erfolgreicher Registrierung wird Ihre Auszahlung sofort bearbeitet.</p>
+    <p><strong>Ist das echt? Wie kann ich dem vertrauen?</strong><br>Es gibt viele Gewinner, die bereits ihre Gewinne erhalten haben. Sie finden Beweise oben.</p>
+  </div>
+</section>
 
-  <section class="section">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-en">
-      <h3>English</h3>
-      <p><strong>What is the $100 registration fee for?</strong><br>This confirms you as a verified participant and covers processing to release your reward.</p>
-      <p><strong>When will I receive my giveaway reward?</strong><br>After successful registration, your reward is processed immediately.</p>
-      <p><strong>Is this legit? How do I trust this?</strong><br>We have many past winners who paid the same fee and received their prizes. You’ll find proof above.</p>
-    </div>
+<footer>
+  Contact: schwarzdietmar10@gmail.com | WhatsApp: +1 (812) 604‑3130 | Instagram: @florian__richman<br/>
+  &copy; 2025 Florian Richman Giveaway
+</footer>
 
-    <div class="faq-de">
-      <h3>Deutsch</h3>
-      <p><strong>Wofür ist die Registrierungsgebühr von 100 $?</strong><br>Sie bestätigt Sie als verifizierten Teilnehmer und deckt die Bearbeitung Ihrer Auszahlung.</p>
-      <p><strong>Wann erhalte ich meinen Gewinn?</strong><br>Nach erfolgreicher Registrierung wird Ihre Auszahlung sofort bearbeitet.</p>
-      <p><strong>Ist das echt? Wie kann ich dem vertrauen?</strong><br>Es gibt viele Gewinner, die bereits ihre Gewinne erhalten haben. Sie finden Beweise oben.</p>
-    </div>
-  </section>
+<script>
+  const isGerman = (navigator.language || navigator.userLanguage).toLowerCase().startsWith('de');
 
-  <footer>
-    Contact: schwarzdietmar10@gmail.com | WhatsApp: +1 (812) 604‑3130 | Instagram: @florian__richman<br/>
-    &copy; 2025 Florian Richman Giveaway
-  </footer>
+  document.querySelector('.faq-en').style.display = isGerman ? 'none' : 'block';
+  document.querySelector('.faq-de').style.display = isGerman ? 'block' : 'none';
 
-  <script>
-    const isGerman = (navigator.language || navigator.userLanguage).toLowerCase().startsWith('de');
-    document.querySelector('.faq-en').style.display = isGerman ? 'none' : 'block';
-    document.querySelector('.faq-de').style.display = isGerman ? 'block' : 'none';
+  document.addEventListener("DOMContentLoaded", function () {
+    if (isGerman) {
+      document.querySelector(".giveaway-title").innerText = "⏳ Nächste Giveaway-Runde endet in:";
+      document.querySelector(".registration-heading").innerText = "Registrierungsvoraussetzungen";
+      document.getElementById("reg-fullname").innerText = "✅ Vollständiger Name";
+      document.getElementById("reg-selfie").innerText = "✅ Selfie-Foto";
+      document.getElementById("reg-fee").innerText = "✅ $100 Registrierungsgebühr";
+      document.getElementById("reg-note").innerHTML = "<strong>Hinweis:</strong> Diese Gebühr ist verpflichtend, um Sie als verifizierten Gewinner zu bestätigen. Alle bisherigen Gewinner haben diese Gebühr bezahlt und erfolgreich ihre Gewinne erhalten.";
+      document.getElementById("trust-message").innerText = "Wir geben Ihnen weiterhin unsere 100%ige Zusicherung und Garantie, dass Sie Ihre Gewinne wie die bisherigen Teilnehmer sicher erhalten werden. Aber derzeit scheinen Sie sich selbst diese Chance zu verwehren. Die Möglichkeit, Ihre Gewinne zu erhalten, rutscht Ihnen durch die Finger – wegen Verzögerungen, weil Sie noch zu den Teilnehmern gehören, die ihren Preis noch nicht erhalten haben. Bitte nehmen Sie dies zur Kenntnis und handeln Sie schnell, um weitere Verzögerungen zu vermeiden.";
+      document.getElementById("faq-heading").innerText = "Häufig gestellte Fragen";
+    }
+  });
 
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-    sections.forEach(section => observer.observe(section));
-
-    const deadline = new Date().getTime() + 4 * 60 * 60 * 1000;
-    const countdown = document.getElementById("countdown");
-    setInterval(() => {
-      const now = new Date().getTime();
-      const t = deadline - now;
-      if (t <= 0) {
-        countdown.innerHTML = "Closing soon!";
-      } else {
-        const h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((t % (1000 * 60)) / 1000);
-        countdown.innerHTML = `${h}h ${m}m ${s}s`;
+  const sections = document.querySelectorAll('.section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
       }
-    }, 1000);
-  </script>
+    });
+  }, { threshold: 0.2 });
+  sections.forEach(section => observer.observe(section));
+
+  const deadline = new Date().getTime() + 4 * 60 * 60 * 1000;
+  const countdown = document.getElementById("countdown");
+  setInterval(() => {
+    const now = new Date().getTime();
+    const t = deadline - now;
+    if (t <= 0) {
+      countdown.innerHTML = "Closing soon!";
+    } else {
+      const h = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((t % (1000 * 60)) / 1000);
+      countdown.innerHTML = `${h}h ${m}m ${s}s`;
+    }
+  }, 1000);
+</script>
 
 </body>
 </html>
